@@ -4,6 +4,7 @@ body{
     height: 100%;
     background-image: url("https://media.istockphoto.com/photos/virus-wide-picture-id1312985523?b=1&k=20&m=1312985523&s=170667a&w=0&h=BON9ct4JCqCd6FXNqclYSs1a3PeZZvJuZBMuo46_TUU="); 
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .logo{
     height: 70px;
