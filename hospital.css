@@ -1,0 +1,67 @@
+.logo{
+    height: 70px;
+    width: 60px;
+}
+.nav_logo{
+    color: white;
+    font-size: 30px;
+}
+.main-container {
+    font-family: "Roboto";
+}
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    color: black;
+}
+
+#myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid rgb(231, 28, 28);
+    margin-bottom: 12px;
+}
+
+#myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+#myTable th,
+#myTable td {
+    text-align: left;
+    padding: 12px;
+}
+
+#myTable tr {
+    border-bottom: 1px solid rgb(94, 56, 56);
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+    background-color: #a79d9d;
+}
+#test1{
+    display: none;
+}
+table, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 30px;
+  }
+td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: rgb(36, 58, 45);
+    font-style: Serif;
+    font-weight: 700;
+
+  }

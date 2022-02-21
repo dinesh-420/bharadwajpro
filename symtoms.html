@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="symtoms.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="http://www.dailyrounds.org/blog/wp-content/uploads/2015/05/caduceus.jpg" alt="logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active p-2">
+              <a class="nav-link" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="35px" fill="white" class="bi bi-house-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+              </svg></a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="symtoms.html"><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="35px" fill="white" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+              </svg></a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="hospital.html"><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="35px" fill="white" class="bi bi-hospital" viewBox="0 0 16 16">
+                <path d="M8.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM13.25 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Zm.25 1.75a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5Zm-11-4a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 9.75v-.5A.25.25 0 0 0 2.75 9h-.5Zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Z"/>
+                <path d="M5 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1V1Zm2 14h2v-3H7v3Zm3 0h1V3H5v12h1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3Zm0-14H6v1h4V1Zm2 7v7h3V8h-3Zm-8 7V8H1v7h3Z"/>
+              </svg></a>
+            </li>
+          </ul>
+        </div>
+      </nav><br><br><br><br>
+
+    <h2 class="mt-5">Disease Finder</h2>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Symptoms.."
+        title="Type in a symptom">
+    <a href="hospital.html" target="_blank" rel="noopener noreferrer">click here to view top hospitals</a>
+    <table id="myTable">
+        <tr class="header">
+            <th style="width:60%;">Symptom</th>
+            <th style="width:20%;">Disease</th>
+            <th style="width:20% ;">Specialists</th>
+        </tr>
+        <tr>
+            <td>Stinging and burning of skin, patches of rough and dry skin, larger pores, broken blood vessels on your
+                eye lids</td>
+            <td>Rosacea</td>
+            <td>Dermatologist</td>
+        </tr>
+        <tr>
+            <td>Dry, itchy, scaly skin, lightened or darkened skin spots, scaly patch of skin at the sight of rash,
+                crooks of elbows</td>
+            <td> Atopic Derma titis</td>
+            <td>Dermatologist</td>
+        </tr>
+        <tr>
+            <td>General weakness, fatigue, chest pain, sortness of pain, fainting attacks, high blood pressure, edema,
+                swelling of feet ankles and legs</td>
+            <td>Cardiomyopathis</td>
+            <td>Cardiologist</td>
+        </tr>
+        <tr>
+            <td>Fever, fatigue, muscle aches, shortness of breath, nausea, vomiting and diarrhea</td>
+            <td>Pericardialial</td>
+            <td>Cardiologist</td>
+        </tr>
+        <tr>
+            <td>Increasing in thirst , frequency urination,extreme hunger,Un-intended weight loss, blurred vision</td>
+            <td>Diabetes</td>
+            <td>Diabetologist</td>
+        </tr>
+        <tr>
+            <td>Increasing in thirst , frequency urination, extreme hunger,
+                Un-intended weight loss, blurred vision, fatigue, slow healing sores, frequent infections
+            </td>
+            <td>Type-2 Diabetes</td>
+            <td>Diabetologist</td>
+        </tr>
+        <tr>
+            <td>coughing especially at night, wheezing, shortness of breath, chest pain</td>
+            <td>asthma</td>
+            <td>Allergists/Immunologists</td>
+        </tr>
+        <tr>
+            <td>dry, scaly skin, redness, itching (intense)</td>
+            <td>eczema</td>
+            <td>Allergists/Immunologists</td>
+        </tr>
+        <tr>
+            <td>tingling, itching in the mouth, hives, itching or eczema, swelling of lips and face, throat, other parts
+                of body, abdominal pain, diarrhoea</td>
+            <td>food allergies</td>
+            <td>Allergists/Immunologists</td>
+        </tr>
+        <tr>
+            <td>Pain, redness, pimple like spots, mild to moderate swelling,vomiting,itching</td>
+            <td>insect sting allergies</td>
+            <td>Allergists/Immunologists</td>
+        </tr>
+        <tr>
+            <td>Depression, brain fog, fatigue, muscle cramps, cold in tolerance, weight gain, dry skin</td>
+            <td>Thyroid</td>
+            <td>Endocrinologist</td>
+        </tr>
+    </table>
+    <div id="test1">
+        <p>dinesh</p>
+    </div>
+    <script src="symtoms.js"></script>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="hospital.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img
+                src="http://www.dailyrounds.org/blog/wp-content/uploads/2015/05/caduceus.jpg" alt="logo"
+                class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item active p-2">
+                    <a class="nav-link" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="35px"
+                            fill="white" class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                            <path fill-rule="evenodd"
+                                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                        </svg></a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="symtoms.html"><svg xmlns="http://www.w3.org/2000/svg" width="30px"
+                            height="35px" fill="white" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                            <path
+                                d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                            <path
+                                d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z" />
+                        </svg></a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="hospital.html"><svg xmlns="http://www.w3.org/2000/svg" width="30px"
+                            height="35px" fill="white" class="bi bi-hospital" viewBox="0 0 16 16">
+                            <path
+                                d="M8.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM13.25 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Zm.25 1.75a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5Zm-11-4a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 9.75v-.5A.25.25 0 0 0 2.75 9h-.5Zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Z" />
+                            <path
+                                d="M5 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1V1Zm2 14h2v-3H7v3Zm3 0h1V3H5v12h1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3Zm0-14H6v1h4V1Zm2 7v7h3V8h-3Zm-8 7V8H1v7h3Z" />
+                        </svg></a>
+                </li>
+            </ul>
+        </div>
+    </nav><br><br><br><br>
+    <h2 class="mt-5">Top Specialists and Hospitals</h2>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Specialization to get hospital"
+        title="Type in a symptom">
+    <table id="myTable">
+        <tr class="header">
+            <th style="width:40%;">Specialization</th>
+            <th style="width:60%;">Hospitals</th>
+        </tr>
+        <tr>
+            <td>Dermatologist</td>
+            <td>Dr. Kavya Baddireddi
+                Lalith Health Care, raitu bazaar road, opposite anna canteen, sector-4, MVP colony, visakhaptnam ,
+                Andhra Pradesh 530017.
+            </td>
+        </tr>
+        <tr>
+            <td>Dermatologist</td>
+            <td>Dr. P.V.Sravani
+                Vaishnavi Derma Clinc – Skin Hair Laser,
+                Plot No. 123, Towards beach Rd, Ushodaya junction, Sector 12, MVP colony, Visakhapatnam, Andhra Pradesh
+                530017</td>
+        </tr>
+        <tr>
+            <td>Cardiologist</td>
+            <td>Cardiologist Dr. Ravi Kiran Muddhada
+                Address: Opposite to malatamba, vidyaniketan, housing board colony, P.M.Palem, Visakhaptnam
+            </td>
+        </tr>
+        <tr>
+            <td>Diabetologist</td>
+            <td>Dr. C.H. Mounika Anitha
+                Dr. Mounika’s
+                opposite near cricket stadium, opposite sfc food court beside traffic police station, P.M.Palem,
+                vishakapatnam) <br></td>
+        </tr>
+        <tr>
+            <td>Diabetologist</td>
+            <td>Vijaya sri hospital, neurology endocrinology physiotherapy,
+                Address: Opposite Vizag conventions, near YSR vizag cricket stadium, sunderanagar , P.M. palem,
+                Visakhpatnam
+            </td>
+        </tr>
+        <tr>
+            <td>Allergists/Immunologists</td>
+            <td>(Dr. D. Ramarajyam maharanipeta)
+                Sri Srinivasa gastro and liver centre, maharanipeta
+            </td>
+        </tr>
+        <tr>
+            <td>Endocrinologist</td>
+            <td>Dr. Mounika’s
+                opposite near cricket stadium, opposite sfc food court beside traffic police station, P.M.Palem,
+                vishakapatnam) 3.5 km
+            </td>
+        </tr>
+    </table>
+    <script src="symtoms.js"></script>
+</body>
+
+</html>
